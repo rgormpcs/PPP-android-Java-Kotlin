@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+    android:id="@+id/placaLabel"
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    android:text="Placa:"/>
+
+
+    <EditText
+        android:id="@+id/placaText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:background="@drawable/stroke"
+        android:gravity="center"
+        android:text="GJC0824"/>
+
+    <TextView
+        android:id="@+id/horaLabel"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:text="Hora:"/>
+
+    <EditText
+        android:id="@+id/timeText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:background="@drawable/stroke"
+        android:gravity="center"
+        android:inputType="time"/>
+
+    <CalendarView
+        android:id="@+id/dateCalendar"
+        android:layout_width="280dp"
+        android:layout_height="290dp"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/buttonPredict"
+        android:text="Ver Restricción"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Preciona el botón"
+        android:gravity="center"
+        />
+
+</LinearLayout>
